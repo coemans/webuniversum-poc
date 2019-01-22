@@ -1,0 +1,6 @@
+{
+  "name": "webuniversum-poc",
+  "short_name": "webuniversum-poc",
+  "start_url": "/",
+  "display": "standalone"
+}
