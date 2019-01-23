@@ -1,6 +1,4 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
-import '@govflanders/vl-ui-core';
-import '@govflanders/vl-ui-datepicker';
 
 /**
  * @customElement
@@ -14,7 +12,7 @@ class WebuiniversumPocMain extends PolymerElement {
           display: block;
         }
       </style>
-      <h2>Hello [[vl-ui-datepicker]]!</h2>
+      <h2>Hello vl-ui-datepicker!</h2>
     `;
   }
 }

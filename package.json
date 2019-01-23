@@ -1,6 +1,12 @@
 {
   "name": "webuniversum-poc",
+  "scripts": {
+    "prepare": "npm run prepare:sass && npm run prepare:symlink",
+    "prepare:sass": "sass --load-path node_modules/@govflanders scss/style.scss css/output.css",
+    "prepare:symlink": "ln -sf node_modules/@govflanders/vl-ui-core/src/font/iconfont font"
+  },
   "dependencies": {
+    "@govflanders/vl-ui-core": "^3.7.2",
     "@govflanders/vl-ui-datepicker": "^3.7.2",
     "@polymer/polymer": "^3.0.0"
   },

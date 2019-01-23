@@ -10,11 +10,33 @@
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
 
-    <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="stylesheet" href="css/output.css">
 
-    <script type="module" src="/src/webuiniversum-poc-main/webuiniversum-poc-main.js" crossorigin></script>
+    <script type="module">
+      import '@govflanders/vl-ui-core';
+      import '@govflanders/vl-ui-datepicker';
+    </script>
   </head>
+
   <body>
-    <webuiniversum-poc-main></webuiniversum-poc-main>
+    <div class="vl-region">
+      <div class="vl-layout">
+        <div class="vl-grid vl-grid--is-stacked">
+          <h1>Hello vl-ui-datepicker!</h1>
+          <div class="vl-col--1-1">
+            <label for="datepicker-1" class="vl-form__label">
+              Datum evenement (dd.mm.jjjj)
+            </label>
+            <div class="vl-input-group vl-datepicker" data-vl-datepicker>
+              <input class="vl-input-field vl-input-field--block js-vl-datepicker-input" type="text" id="datepicker-1" name="datepicker-1" />
+              <button type="button" name="button" class="vl-input-addon js-vl-datepicker-toggle js-vl-tooltip" data-vl-tooltip-content="Kies datum">
+                <i class="vl-vi vl-vi-calendar" aria-hidden="true"></i>
+                <span class="vl-u-visually-hidden"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
